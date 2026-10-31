@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+build/
+
+# env & secrets (API keys are BYOK and live only in the browser's localStorage,
+# never in this repo)
+.env
+.env.*
+
+# logs & misc
+*.log
+.DS_Store
+
+# IMPORTANT: /.kiro must NEVER be ignored.
+# It holds the specs, steering and hooks that document how this project was
+# built with Kiro, and hackathon judges verify it. The guard hook in
+# /.kiro/hooks/kiro-guard.json watches this file.
